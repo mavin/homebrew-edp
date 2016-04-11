@@ -3,7 +3,7 @@ class TerraformPlus < Formula
   desc "A custom Terraform distro with extra plugins we use at Say Media"
   homepage "https://github.com/saymedia/terraform-plus"
   url "https://github.com/saymedia/terraform-plus/releases/download/v#{version}/terraform-plus-v#{version.to_s.sub! "+", "."}-darwin.zip"
-  sha256 "4593c759c040737e6e9fbb0e4a180f90e7ccf51eb78a645f7ffb8c23c6b385d6"
+  sha256 "3f0740a234066b8733c2f8bacfb4afe06b5a4dc396e6fe2aa58466c0ad891492"
 
   conflicts_with "terraform", :because => "terraform-plus overrides the terraform binary"
 
