@@ -5,7 +5,7 @@ class TerraformPlus < Formula
   url "https://github.com/saymedia/terraform-plus/releases/download/v#{version}/terraform-plus-v#{version.to_s.sub! "+", "."}-darwin.tar.xz"
   sha256 "ce1261e4db85f4cd2da973c274efb1fba618b1c9dbd67cf5b7eed67594c9a2c9"
 
-  depends_on :xz
+  depends_on "xz"
   conflicts_with "terraform", :because => "terraform-plus overrides the terraform binary"
 
   def install
