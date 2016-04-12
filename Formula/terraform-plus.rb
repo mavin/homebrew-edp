@@ -1,10 +1,11 @@
 class TerraformPlus < Formula
-  version "0.6.14+0.2"
+  version "0.6.14+0.3"
   desc "A custom Terraform distro with extra plugins we use at Say Media"
   homepage "https://github.com/saymedia/terraform-plus"
-  url "https://github.com/saymedia/terraform-plus/releases/download/v#{version}/terraform-plus-v#{version.to_s.sub! "+", "."}-darwin.zip"
-  sha256 "3f0740a234066b8733c2f8bacfb4afe06b5a4dc396e6fe2aa58466c0ad891492"
+  url "https://github.com/saymedia/terraform-plus/releases/download/v#{version}/terraform-plus-v#{version.to_s.sub! "+", "."}-darwin.tar.xz"
+  sha256 "ce1261e4db85f4cd2da973c274efb1fba618b1c9dbd67cf5b7eed67594c9a2c9"
 
+  depends_on :xz
   conflicts_with "terraform", :because => "terraform-plus overrides the terraform binary"
 
   def install
